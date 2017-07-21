@@ -33,6 +33,10 @@
 # Ignore macOS Finder state file
 .DS_Store
 
+# Ignore autotools files
+/autotools
+Makefile.in
+
 # Ignore common compiled artifacts.
 *~
 *.dwo
