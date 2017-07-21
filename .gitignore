@@ -30,6 +30,9 @@
 .repo/
 .svn/
 
+# Ignore macOS Finder state file
+.DS_Store
+
 # Ignore common compiled artifacts.
 *~
 *.dwo
