@@ -36,6 +36,7 @@
 # Ignore autotools files
 /autotools
 Makefile.in
+/configure
 
 # Ignore common compiled artifacts.
 *~
