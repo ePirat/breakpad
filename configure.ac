@@ -113,6 +113,14 @@ case $host in
 esac
 AM_CONDITIONAL(LINUX_HOST, test x$LINUX_HOST = xtrue)
 
+# Only build Windows client libs when compiling for Windows
+case $host in
+  *-*-mingw* )
+    WINDOWS_HOST=true
+    ;;
+esac
+AM_CONDITIONAL(WINDOWS_HOST, test x$WINDOWS_HOST = xtrue)
+
 # Only use Android support headers when compiling for Android
 case $host in
   *-android*)
